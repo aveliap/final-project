@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-poppins;
+}
+
+body {
+    @apply bg-light overflow-x-hidden;
+    background-color: #F9F5E8;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+.padding {
+    @apply px-3 lg:px-0;
+}
+
+.container {
+    @apply w-[460px] lg:w-[1120px];
+}
+
+.auth-container {
+    @apply w-[460px] lg:w-full;
+}
+
+.transition-template {
+    @apply transition-all duration-300;
+}
+
+.no-arrow {
+    appearance: textfield; /* Firefox */
+}
+
+.no-arrow::-webkit-inner-spin-button,
+.no-arrow::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari, and Opera */
+    margin: 0; /* Remove margin */
+}
+
+/* Mengatur gaya untuk input saat autofill */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset; /* Ganti 'white' dengan warna latar belakang yang diinginkan */
+    box-shadow: 0 0 0 30px white inset; /* Ganti 'white' dengan warna latar belakang yang diinginkan */
+    -webkit-text-fill-color: black; /* Mengatur warna teks */
+}
+
+/* Jika Anda ingin mengatur gaya untuk input yang tidak autofill */
+input {
+    background-color: white; /* Warna latar belakang normal */
+    color: rgba(0, 0, 0, 0.8); /* Warna teks */
+}
+
+th,
+tr {
+    @apply font-normal text-dark;
+}
+
+.pagination {
+    @apply mt-10 gap-2 p-0 flex justify-center list-none;
+}
+
+.pagination a {
+    @apply text-lg py-1 px-3 border bg-light border-accent rounded-md text-dark/80 hover:border-primary hover:text-primary transition-template;
+}
+
+.active a {
+    @apply border-primary text-primary;
+}
+
+.break-me {
+    @apply hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
