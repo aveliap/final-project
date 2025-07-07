@@ -1,0 +1,99 @@
+[
+    {
+        "link": "/dashboard/admin/partner",
+        "name": "Partners",
+        "data": 0,
+        "colors": ["#F43F5E", "#FB7185", "#FDA4AF", "#FECDD3"],
+        "legend": [
+            {
+                "name": "Unverified"
+            },
+            {
+                "name": "In Review"
+            },
+            {
+                "name": "Verified"
+            },
+            {
+                "name": "Rejected"
+            }
+        ],
+        "dataChart": {
+            "labels": ["Unverified", "In Review", "Verified", "Rejected"],
+            "datasets": [
+                {
+                    "data": [7, 19, 28, 4],
+                    "backgroundColor": [
+                        "#F43F5E",
+                        "#FB7185",
+                        "#FDA4AF",
+                        "#FECDD3"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "link": "/dashboard/admin/campaign",
+        "name": "Campaigns",
+        "data": 0,
+        "colors": ["#3B82F6", "#60A5FA", "#7DD3FC", "#BAE6FD"],
+        "legend": [
+            {
+                "name": "In Review"
+            },
+            {
+                "name": "Active"
+            },
+            {
+                "name": "Completed"
+            },
+            {
+                "name": "Rejected"
+            }
+        ],
+        "dataChart": {
+            "labels": ["In Review", "Active", "Completed", "Rejected"],
+            "datasets": [
+                {
+                    "data": [7, 19, 28, 4],
+                    "backgroundColor": [
+                        "#3B82F6",
+                        "#60A5FA",
+                        "#7DD3FC",
+                        "#BAE6FD"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "link": "/dashboard/admin/withdrawal",
+        "name": "Withdrawals",
+        "data": 0,
+        "colors": ["#F59E0B", "#FBBF24", "#FCD34D"],
+        "legend": [
+            {
+                "name": "Pending",
+                "color": "#F59E0B"
+            },
+            {
+                "name": "Aproved",
+                "color": "#FBBF24"
+            },
+            {
+                "name": "Rejected",
+                "color": "#FCD34D"
+            }
+        ],
+        "dataChart": {
+            "labels": ["Pending", "Aproved", "Rejected"],
+            "datasets": [
+                {
+                    "data": [7, 19, 28],
+                    "backgroundColor": ["#F59E0B", "#FBBF24", "#FCD34D"]
+                }
+            ]
+        }
+    }
+]
